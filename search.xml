@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>感知器</title>
+      <link href="2021/03/16/%E6%84%9F%E7%9F%A5%E5%99%A8/"/>
+      <url>2021/03/16/%E6%84%9F%E7%9F%A5%E5%99%A8/</url>
+      
+        <content type="html"><![CDATA[<h1 id="感知器"><a href="#感知器" class="headerlink" title="感知器"></a>感知器</h1><h2 id="感知器更新规则疑惑"><a href="#感知器更新规则疑惑" class="headerlink" title="感知器更新规则疑惑"></a>感知器更新规则疑惑</h2><p>$$<br>w_i\leftarrow w_i + \Delta w_i<br>$$</p><p>$$<br>\Delta w_i = \eta (lable - y)x_i<br>$$</p><p>$$<br>疑问：为何要乘上 x_i<br>$$</p><h3 id="解惑"><a href="#解惑" class="headerlink" title="解惑"></a>解惑</h3><p>$$<br>代码中把,loss=lable-y,作为损失值,而在更新权重w_i的时候，并没有以代码loss值作为依据对w_i求偏导，<br>$$</p><p>$$<br>实际上作者的损失值计算应该是,loss= \frac{1}{2}(lable-y)^2,,然后损失值loss对w_i求偏导，就得到了<br>$$</p><p>$$<br>\Delta w_i = \frac{\partial loss}{\partial w_i} = -(lable - y)x_i<br>$$</p><p>​            我们需要往<strong>函数的最小值的方向</strong>前进，而梯度是一个向量，它指向<strong>函数值上升最快</strong>的方向，只要向着梯度的反方向前进就可以达到目的，所以两个负号抵消，就变成了加上一个值。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 机器学习 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 机器学习 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>209. 长度最小的子数组</title>
       <link href="2021/03/16/209.%E9%95%BF%E5%BA%A6%E6%9C%80%E5%B0%8F%E7%9A%84%E5%AD%90%E6%95%B0%E7%BB%84/"/>
       <url>2021/03/16/209.%E9%95%BF%E5%BA%A6%E6%9C%80%E5%B0%8F%E7%9A%84%E5%AD%90%E6%95%B0%E7%BB%84/</url>
